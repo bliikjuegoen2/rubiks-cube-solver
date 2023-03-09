@@ -1,11 +1,13 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Cube/Colour/white.tres" type="Material" id=1]
 [ext_resource path="res://Cube/Colour/red.tres" type="Material" id=2]
 [ext_resource path="res://Cube/Colour/blue.tres" type="Material" id=3]
+[ext_resource path="res://Cube/Piece/Piece.cs" type="Script" id=4]
 
 [node name="Piece" type="CSGCombiner"]
 calculate_tangents = false
+script = ExtResource( 4 )
 
 [node name="X" type="CSGBox" parent="."]
 height = 1.6
